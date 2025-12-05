@@ -1,10 +1,50 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Graham Joonsar</title>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graham Joonsar | Home</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
 
-    <body>
-        Hello World!
-    </body>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>Graham Joonsar</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="papers.html">Papers</a>
+            <a href="images.html">Images</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h2>Welcome to My Personal Website</h2>
+        <p>
+            The purpose of this website is to provide a space to gather my work, thoughts, and ideas.
+            It will also act as a portfolio for my education experience.
+        </p>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+        <h3>About Me</h3>
+        <p>
+            My name is Graham Joonsar, and I am currently a Math and German double major at Georgia Tech, with a computer science minor.
+            My interests are in Mathematics, Theology, Philosophy, Language, and more.
+        </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © <span id="year"></span> Graham Joonsar. All rights reserved.
+    </footer>
+
+    <script>
+        // Auto-update footer year
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
 </html>

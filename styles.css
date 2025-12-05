@@ -1,0 +1,109 @@
+/* ---------- GLOBAL ---------- */
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+    background-color: #fafafa;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    background: #12124b;
+    color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 24px;
+    font-size: 1rem;
+    transition: opacity 0.2s ease;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+/* ---------- PAGE SECTIONS ---------- */
+section {
+    padding: 60px 40px;
+}
+
+.page-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ---------- PAPERS LIST ---------- */
+.paper-item {
+    background: #fff;
+    padding: 18px 22px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    transition: transform 0.15s ease;
+}
+
+.paper-item:hover {
+    transform: translateY(-3px);
+}
+
+.paper-title {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.paper-meta {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* ---------- IMAGE GALLERY ---------- */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    margin-top: 60px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    background: #f0f0f0;
+}
